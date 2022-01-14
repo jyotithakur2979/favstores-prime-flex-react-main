@@ -1,0 +1,110 @@
+.navbar {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+.nav{
+    display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  position: relative;
+  top:-10px;
+}
+
+.nav-item {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: center;
+    position: relative;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #222222;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-link:hover, .nav-link:focus {
+    text-decoration: none;
+    color: #1CC0A8;
+  }
+
+  .nav-item:hover .dropdown-menu{
+      display: block;
+      position: absolute;
+      z-index: 1000;
+      top:34px;
+      left: 20px;
+      transition: 10s;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.25rem;
+    transition: 10s;
+  }
+  
+  .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #777777;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    text-decoration: none;
+  }
+  
+  .dropdown-item:hover, .dropdown-item:focus {
+    color: #1CC0A8;
+    text-decoration: none;
+    background-color: #f8f9fa;
+  }
+  
+  .dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #007bff;
+  }
+
+  .bg-light {
+    background-color: #f8f9fa !important;
+  }
